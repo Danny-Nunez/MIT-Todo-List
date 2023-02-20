@@ -57,6 +57,9 @@ code {
   justify-content: space-between;
   cursor: pointer;
 }
+.todo:hover {
+  background-color: antiquewhite;
+}
 
 .input {
   width: 100%;
