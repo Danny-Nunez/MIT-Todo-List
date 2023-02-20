@@ -19,4 +19,4 @@ Check out the Live Demo 👉 https://mitxpro-todolist.netlify.app/
  - JS, HTML, CSS
 
 ## License
-[MIT License](LICENSE)
+Code written by Danny Nunez using starter code from the MITxPRO full stack development bootcamp course.
