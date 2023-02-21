@@ -27,6 +27,13 @@ function App() {
     setTodos(newTodos);
   };
   
+  const markDoneTodo = (index) => {
+    const newTodos = [...todos];
+    newTodos[index].isCompleted = true;   //span line thru completed title
+    newTodos[index].isBackgroundGreen = true; //change background color of completed check Button
+    setTodos(newTodos);
+  };
+
   const removeTodo = (index) => {
     let temp = [...todos];
     temp.splice(index, 1);
@@ -37,7 +44,7 @@ function App() {
     <div className="App">
       <h1 className="title">Todo List</h1>
       {todos.map((todo, i) => (
-        <Todo index={i} key={i} todo={todo} remove={removeTodo} />
+        <Todo index={i} key={i} todo={todo} mark={markDoneTodo} remove={removeTodo} />
       ))}
       <TodoForm addTodo={addTodo} />
     

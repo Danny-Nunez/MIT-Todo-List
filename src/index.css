@@ -32,6 +32,31 @@ code {
   width: 100px;
 }
 
+.background-green {
+  border-color: rgb(0, 177, 32);
+  background-color: green;
+  color: #fff;
+  border-style: solid;
+  border: 2px;
+  border-radius: 3px;
+  font-size: 17px;
+}
+button {
+  cursor: pointer;
+}
+
+.xbox {
+  background-color: #d00000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 2px;
+  font-size: 17px;
+}
+.xbox:hover {
+  background-color: #ff0000;
+}
+
 .App {
   background: #cacaca;
   padding: 30px;
@@ -55,10 +80,9 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer;
 }
 .todo:hover {
-  background-color: antiquewhite;
+  background-color: rgb(236, 236, 236);
 }
 
 .input {

@@ -1,11 +1,15 @@
-function Todo({ todo, index, remove }) {
-    function handle() {
-      remove(index);
-    }
+function Todo({ todo, index, mark, remove }) {
+   
     return (
-      <div className="todo" onClick={handle}>
-        {todo.text} <div className="emoji">❎</div>
+      <div className="todo" >
+        <span style={{ textDecoration: todo.isCompleted ? 'line-through' : '' }}>{todo.text}</span>
+        
+        <div className="buttons">
+        <button className={todo.isBackgroundGreen ? 'background-green' : ''} onClick={() => mark(index)}>✓</button> <button className="xbox" onClick={() => remove(index)}>✕</button>
       </div>
+
+      </div>
+      
     );
   }
 
