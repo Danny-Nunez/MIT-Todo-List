@@ -44,7 +44,7 @@ code {
 button {
   cursor: pointer;
   color: rgb(86, 86, 86);
-  border: none;
+  border: 1px;
   border-color: rgb(86, 86, 86);
   border-style: solid;
   border-radius: 3px;
@@ -59,6 +59,9 @@ button {
   border-radius: 3px;
   margin-bottom: 2px;
   font-size: 17px;
+  border: 1px;
+  border-color: rgb(86, 86, 86);
+  border-style: solid;
 }
 .xbox:hover {
   background-color: #ff0000;
